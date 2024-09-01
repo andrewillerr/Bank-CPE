@@ -49,7 +49,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <a1>เข้าสู่ระบบรับ-เบิกเงิน CPE9</a1></br></br></br>
-    <center><p1>1.นายพรหมมินทร์ บัวพันธ์ (Aun) Manager Nisit ID: 6640203094</p1></center>
+    
+    <center><p1>รายชื่อพนักงาน</p1></center>
+    <ul>
+        <li><center><p1>1.นายพรหมมินทร์ บัวพันธ์ (Aun) Manager Nisit ID: 6640203094</p1></center></li>
+        <li><center><p2>2. () Asst.Manager Nisit ID: 664020</p2></center></li>
+        <li><center><p3>3. () Accountant   Nisit ID: 664020</p3></center></li>
+        <li><center><p4>4. () Accountant   Nisit ID: 664020</p4></center></li>
+    </ul>
     <h1>Login</h1>
     <form action="login.php" method="POST">
         <label>Username:</label>
@@ -59,6 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="submit" name="login" value="Login">
     </form>
     <p style="color:red;"><?php echo $error; ?></p>
+    <center><iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FBangkok&bgcolor=%23F6BF26&src=Y182ZmJmNTI2YzUxNzVjM2FlYzQ2MGNhN2UzMDUzZGM1MzU5YjE3NjNjYjBlMDA4YWNjNWUzODYyNDdkOTYxOGU3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23b5783f" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe><br>
 
     <h1>Register</h1>
     <form action="login.php" method="POST">
@@ -66,12 +74,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="text" name="register_username" required><br>
         <label>Password:</label>
         <input type="password" name="register_password" required><br>
-        <label>Role:</label>
+        <label>ตำแหน่งงาน:</label>
         <select name="register_role" required>
             <option value="accountant">Accountant</option>
             <option value="manager">Manager</option>
         </select><br>
-        <label>Secret Code:</label> <!-- ฟิลด์สำหรับรหัสเข้ารหัสพิเศษ -->
+        <label>Top Secret Code:</label> <!-- ฟิลด์สำหรับรหัสเข้ารหัสพิเศษ -->
         <input type="text" name="secret_code" required><br>
         <input type="submit" name="register" value="Register">
     </form>
