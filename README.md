@@ -1,4 +1,4 @@
-#Bank Simulator.
+# Bank Simulator
 
 Design by Andrew 
 
