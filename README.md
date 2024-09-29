@@ -1,4 +1,4 @@
-Simulate of School Bank GSB.
+#Bank Simulator.
 
 Design by Andrew 
 
